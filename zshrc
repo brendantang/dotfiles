@@ -1,5 +1,8 @@
-PATH="/Users/brendan/bin:$PATH"
-PATH="/Users/brendan/.local/bin:$PATH"
+# My personal scripts
+PATH="/Users/brendan/scripts:$PATH" 
+
+# Homebrew
+PATH="/Users/brendan/.local/bin:$PATH" 
 
 # prompt 
 PROMPT='%B%F{black}%K{green} %* %1~/ → %k%f%b '
@@ -34,6 +37,8 @@ PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 # direnv
 eval "$(direnv hook zsh)"
 
-# From thoughtbot laptop:
-export PATH="$HOME/.bin:$PATH"
+# manually installed stuff
+export PATH="$HOME/.bin:$PATH" 
+
+# asdf version manager
 source /Users/brendan/.asdf/asdf.sh
