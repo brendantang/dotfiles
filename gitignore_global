@@ -1,0 +1,13 @@
+.DS_Store
+*.swp
+
+# node
+# some things need to check this in, like github actions.
+# you can use `git add -f node_modules`
+
+node_modules
+
+# I use these hidden files to keep messy notes:
+
+.my_notes*
+.my-notes*

@@ -1,0 +1,8 @@
+[user]
+	name = Brendan Tang
+	email = b@brendantang.net
+	signingkey = 39D84CEF4D9452D0BC36C70816518D990143C347
+[core]
+	excludesfile = /Users/brendan/.gitignore_global
+[gpg]
+	program = gpg
