@@ -11,6 +11,8 @@ set title                " informative window title
 
 set belloff=all          " no audio error bells 
 
+set backspace=indent,eol,start " allow backspace past where cursor entered insert mode
+
 " visual settings
 
 syntax on

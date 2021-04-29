@@ -1,3 +1,5 @@
+export EDITOR=vim
+
 # My personal scripts
 PATH="/Users/brendan/scripts:$PATH" 
 
@@ -42,3 +44,6 @@ export PATH="$HOME/.bin:$PATH"
 
 # asdf version manager
 source /Users/brendan/.asdf/asdf.sh
+
+# Nix package manager
+if [ -e /Users/brendan/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/brendan/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

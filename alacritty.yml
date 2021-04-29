@@ -2,7 +2,7 @@
 font:
   size: 14 
   normal:
-        family: Fira Code Retina
+        family: JetBrains Mono
 
 # Colors (Hyper)
 colors:
@@ -35,3 +35,12 @@ colors:
     magenta: '#cc00ff'
     cyan:    '#00ffff'
     white:   '#FFFFFF'
+
+window:
+  padding:
+    x: 10
+    y: 25
+  decorations: transparent
+  startup_mode: Windowed
+    
+
