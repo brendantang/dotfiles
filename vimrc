@@ -64,3 +64,6 @@ let g:rufo_silence_errors = 1 " Let ALE report things to me
 
 " Haskell use 4 spaces to a tab
 autocmd BufEnter *.hs setlocal expandtab sts=4 sw=4
+
+" nnn instead of netrw for file browser
+let g:nnn#replace_netrw = 1
