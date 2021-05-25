@@ -47,3 +47,12 @@ source /Users/brendan/.asdf/asdf.sh
 
 # Nix package manager
 if [ -e /Users/brendan/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/brendan/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+# hledger plain text accounting
+export LEDGER_FILE=~/finance/2021.journal
+
+# fancy prompt: starship.rs
+eval "$(starship init zsh)"
+
+# auto-completion like fish
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
