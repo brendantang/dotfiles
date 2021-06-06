@@ -56,3 +56,15 @@ eval "$(starship init zsh)"
 
 # auto-completion like fish
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# opam configuration
+test -r /Users/brendan/.opam/opam-init/init.zsh && . /Users/brendan/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+# scala3
+export PATH="$PATH:/Users/brendan/Library/Application Support/Coursier/bin"
+
+# >>> JVM installed by coursier >>>
+export JAVA_HOME="/Users/brendan/Library/Caches/Coursier/jvm/adopt@1.8.0-292/Contents/Home"
+# <<< JVM installed by coursier <<<
+
+alias scalac="scala3-compiler"
