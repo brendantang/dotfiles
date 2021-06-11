@@ -54,7 +54,7 @@ windows:
   - notes:
       layout: tiled
       panes:
-        - vim ~/Documents/notes/index.md
+        - jrnl --short
 
   - accounting: cd finance
 
