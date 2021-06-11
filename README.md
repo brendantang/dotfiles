@@ -1,11 +1,13 @@
 Home config files managed with [rcm](https://github.com/thoughtbot/rcm)
 
-To sync:
-`rcup -v`
-
 Reference:
 http://thoughtbot.github.io/rcm/rcm.7.html
 
+To sync:
+`rcup -v` (probably not necessary)
+
+To start managing a new dotfile with rcm:
+`mkrc ~/.path_to_it`
 
 Files:
 - `alacritty.yml` - alacritty terminal emulator
