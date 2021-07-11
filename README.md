@@ -23,3 +23,4 @@ Files:
 - `yarnrc` - yarn
 - `zshrc` - zsh shell
 - `config/tmuxinator` - templates to quickly launch tmux window configurations
+- `config/kitty` - kitty terminal emulator

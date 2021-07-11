@@ -52,7 +52,7 @@ if [ -e /Users/brendan/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/brenda
 export LEDGER_FILE=~/finance/2021.journal
 
 # fancy prompt: starship.rs
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 # auto-completion like fish
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh

@@ -56,3 +56,27 @@ endif
 
 " nnn instead of netrw for file browser
 let g:nnn#replace_netrw = 1
+
+
+" emoji abbreviations
+ab :check_mark: ✅
+ab :lightbulb: 💡
+ab :pin: 📌
+ab :bomb: 💣
+ab :pill: 💊
+ab :construction: 🚧
+ab :pencil: 📝
+ab :point_right: 👉
+ab :book: 📖
+ab :link: 🔗
+ab :wrench: 🔧
+ab :telephone: 📞
+ab :email: 📧
+ab :computer: 💻
+ab :robot: 🤖
+ab :factory: 🏭
+ab :clipboard: 📋
+ab :notebook: 📓
+ab :thinky: 🤔
+ab :warning: ⚠️
+ab :bangbang: ‼️
