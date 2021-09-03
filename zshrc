@@ -1,10 +1,10 @@
 export EDITOR=vim
 
 # My personal scripts
-PATH="/Users/brendan/scripts:$PATH" 
+PATH="/Users/brendantang/scripts:$PATH" 
 
 # Homebrew
-PATH="/Users/brendan/.local/bin:$PATH" 
+PATH="/Users/brendantang/.local/bin:$PATH" 
 
 # prompt 
 PROMPT='%B%F{black}%K{green} %* %1~/ → %k%f%b '
@@ -25,10 +25,10 @@ compinit
 export DOKKU_HOST=leveler.xyz
 
 # Go 
-PATH="/Users/brendan/go/bin:$PATH"
+PATH="/Users/brendantang/go/bin:$PATH"
 
 # Haskell
-[ -f "/Users/brendan/.ghcup/env" ] && source "/Users/brendan/.ghcup/env" # ghcup-env
+[ -f "/Users/brendantang/.ghcup/env" ] && source "/Users/brendantang/.ghcup/env" # ghcup-env
 
 # Rust
 source "$HOME/.cargo/env"
@@ -42,11 +42,9 @@ eval "$(direnv hook zsh)"
 # manually installed stuff
 export PATH="$HOME/.bin:$PATH" 
 
-# asdf version manager
-source /Users/brendan/.asdf/asdf.sh
 
 # Nix package manager
-if [ -e /Users/brendan/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/brendan/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+if [ -e /Users/brendantang/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/brendantang/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
 # hledger plain text accounting
 export LEDGER_FILE=~/finance/2021.journal
@@ -58,13 +56,16 @@ export LEDGER_FILE=~/finance/2021.journal
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # opam configuration
-test -r /Users/brendan/.opam/opam-init/init.zsh && . /Users/brendan/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+test -r /Users/brendantang/.opam/opam-init/init.zsh && . /Users/brendantang/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 # scala3
-export PATH="$PATH:/Users/brendan/Library/Application Support/Coursier/bin"
+export PATH="$PATH:/Users/brendantang/Library/Application Support/Coursier/bin"
 
 # >>> JVM installed by coursier >>>
-export JAVA_HOME="/Users/brendan/Library/Caches/Coursier/jvm/adopt@1.8.0-292/Contents/Home"
+export JAVA_HOME="/Users/brendantang/Library/Caches/Coursier/jvm/adopt@1.8.0-292/Contents/Home"
 # <<< JVM installed by coursier <<<
 
 alias scalac="scala3-compiler"
+
+# asdf version manager
+. /usr/local/opt/asdf/libexec/asdf.sh
