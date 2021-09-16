@@ -32,7 +32,7 @@ command! Typora execute '! open -a Typora ' . shellescape(expand("%")) | " Open 
 :nmap <silent> <C-l> :wincmd l<CR>
 
 " vimwiki config
-let g:vimwiki_list = [{'path': '~/Documents/notes/', 'path_html': '~/code/vimwiki_html/', 
+" let g:vimwiki_list = [{'path': '~/Documents/notes/', 'path_html': '~/code/vimwiki_html/', 
                       \ 'syntax': 'markdown', 'ext': '.md'}] " Set vimwiki path and use markdown
 
 " Ale 
