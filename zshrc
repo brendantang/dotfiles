@@ -4,10 +4,10 @@ export EDITOR=vim
 PATH="/Users/brendantang/scripts:$PATH" 
 
 # Homebrew
-PATH="/Users/brendantang/.local/bin:$PATH" 
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # prompt 
-PROMPT='%B%F{magenta}%* %1~/ → %k%f%b '
+PROMPT='%B%F{magenta}%K{}%* %1~/ → %k%f%b '
 
 # set window title to current directory
 DISABLE_AUTO_TITLE="false"
@@ -46,10 +46,17 @@ export LEDGER_FILE=~/finance/2021.journal
 # eval "$(starship init zsh)"
 
 # auto-completion like fish
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # asdf version manager
-. /usr/local/opt/asdf/libexec/asdf.sh
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # Rust
 . "$HOME/.cargo/env"
+
+#Deno
+export DENO_INSTALL="/Users/brendantang/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
+# Nix in multi-user mode
+export NIX_REMOTE=daemon
