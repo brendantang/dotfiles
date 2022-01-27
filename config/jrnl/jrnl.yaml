@@ -12,13 +12,10 @@ indent_character: '|'
 journals:
   '2019_20': /Users/brendantang/journal/2019-2020/journal.txt
   default:
-    encrypt: false
-    journal: /Users/brendantang/journal/journal.txt
-  private:
     encrypt: true
-    journal: /Users/brendantang/journal/private.txt
+    journal: /Users/brendantang/journal/journal.txt
 linewrap: 79
 tagsymbols: '@'
 template: false
 timeformat: '%Y-%m-%d %H:%M'
-version: v2.8
+version: v2.8.3
