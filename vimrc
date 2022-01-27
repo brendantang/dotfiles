@@ -12,6 +12,8 @@ set belloff=all          " no audio error bells
 
 set backspace=indent,eol,start " allow backspace past where cursor entered insert mode
 
+set re=0 " use new regex engine. If you don't set this, typescript syntax highlighting is crazy slow.
+
 " visual settings
 
 syntax on
@@ -53,10 +55,6 @@ if !has('nvim')
   set ttymouse=xterm2
   set mouse=a
 endif
-
-" nnn instead of netrw for file browser
-let g:nnn#replace_netrw = 1
-
 
 " emoji abbreviations
 ab :check_mark: ✅
