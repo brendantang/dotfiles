@@ -54,9 +54,5 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Rust
 . "$HOME/.cargo/env"
 
-#Deno
-export DENO_INSTALL="/Users/brendantang/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
-
 # Nix in multi-user mode
 export NIX_REMOTE=daemon
