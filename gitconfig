@@ -6,3 +6,5 @@
 	excludesfile = /Users/brendantang/.gitignore_global
 [gpg]
 	program = gpg
+[init]
+	defaultBranch = main
