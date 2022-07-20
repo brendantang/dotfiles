@@ -56,3 +56,6 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Nix in multi-user mode
 export NIX_REMOTE=daemon
+
+# Deno
+export PATH="/Users/brendantang/.deno/bin:$PATH"

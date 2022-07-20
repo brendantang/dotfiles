@@ -50,6 +50,7 @@ let g:ale_hover_to_preview = 1
 let g:ale_set_balloons = 1
 highlight clear ALEErrorSign
 highlight clear ALEWarningSign
+let g:ale_echo_msg_format = '%linter% says %code%: %s'
 
 if !has('nvim')
   set ttymouse=xterm2
