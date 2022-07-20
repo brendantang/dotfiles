@@ -58,4 +58,4 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 export NIX_REMOTE=daemon
 
 # Deno
-export PATH="/Users/brendantang/.deno/bin:$PATH"
+export PATH="$HOME/.deno/bin:$PATH"
