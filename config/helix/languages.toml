@@ -1,0 +1,61 @@
+# I use Deno, not node
+[[language]]
+name = "javascript"
+scope = "source.js"
+injection-regex = "^(js|javascript)$"
+file-types = ["js", "jsx", "mjs", "cjs"]
+shebangs = ["node"]
+roots = ["deno.json", "deno.jsonc"]
+comment-token = "//"
+language-server = { command = "deno", args = ["lsp"], language-id = "javascript" }
+config = { enable = true, lint = true, unstable = true } 
+#indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "jsx"
+scope = "source.jsx"
+injection-regex = "jsx"
+file-types = ["jsx"]
+roots = ["deno.json", "deno.jsonc"]
+comment-token = "//"
+language-server = { command = "deno", args = ["lsp"], language-id = "javascriptreact" }
+#indent = { tab-width = 2, unit = "  " }
+config = { enable = true, lint = true, unstable = true } 
+grammar = "javascript"
+
+[[language]]
+name = "typescript"
+scope = "source.ts"
+injection-regex = "^(ts|typescript)$"
+file-types = ["ts"]
+shebangs = []
+roots = ["deno.json", "deno.jsonc"]
+language-server = { command = "deno", args = ["lsp"], language-id = "typescript"}
+config = { enable = true, lint = true, unstable = true } 
+#indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "tsx"
+scope = "source.tsx"
+injection-regex = "^(tsx)$" # |typescript
+file-types = ["tsx"]
+roots = ["deno.json", "deno.jsonc"]
+language-server = { command = "deno", args = ["lsp"], language-id = "typescriptreact" }
+config = { enable = true, lint = true, unstable = true } 
+#indent = { tab-width = 2, unit = "  " }
+
+
+[[language]]
+name = "elm"
+# The default languages.toml file omits the necessary --stdio argument
+language-server = { command = "elm-language-server" , args = ["--stdio"]}
+# Note that elm language server doesn't work with some versions of node.
+# I am running 16.1.0.
+# See https://github.com/elm-tooling/elm-language-server/issues/692
+
+[[language]]
+name = "ruby"
+# Solargraph needs these config options, but formatting still doesn't work. 
+# See https://github.com/helix-editor/helix/issues/2623
+config = { solargraph = { diagnostics = true, formatting = true } }
+indent = { tab-width = 4, unit = "    " }
