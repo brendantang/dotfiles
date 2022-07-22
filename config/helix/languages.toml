@@ -3,25 +3,29 @@
 name = "javascript"
 roots = ["deno.json", "deno.jsonc"]
 language-server = { command = "deno", args = ["lsp"], language-id = "javascript" }
-config = { enable = true, lint = true, unstable = true } 
+auto-format = true
+config = { deno.enable = true, deno.lint = true, deno.unstable = true } 
 
 [[language]]
 name = "jsx"
 roots = ["deno.json", "deno.jsonc"]
 language-server = { command = "deno", args = ["lsp"], language-id = "javascriptreact" }
-config = { enable = true, lint = true, unstable = true } 
+auto-format = true
+config = { deno.enable = true, deno.lint = true, deno.unstable = true } 
 
 [[language]]
 name = "typescript"
 roots = ["deno.json", "deno.jsonc"]
 language-server = { command = "deno", args = ["lsp"], language-id = "typescript"}
-config = { enable = true, lint = true, unstable = true } 
+auto-format = true
+config = { deno.enable = true, deno.lint = true, deno.unstable = true } 
 
 [[language]]
 name = "tsx"
 roots = ["deno.json", "deno.jsonc"]
 language-server = { command = "deno", args = ["lsp"], language-id = "typescriptreact" }
-config = { enable = true, lint = true, unstable = true } 
+auto-format = true
+config = { deno.enable = true, deno.lint = true, deno.unstable = true } 
 
 
 [[language]]
