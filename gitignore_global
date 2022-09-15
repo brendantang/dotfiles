@@ -11,3 +11,5 @@ node_modules
 
 .my_notes*
 .my-notes*
+
+.envrc

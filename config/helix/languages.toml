@@ -42,3 +42,6 @@ name = "ruby"
 # See https://github.com/helix-editor/helix/issues/2623
 config = { solargraph = { diagnostics = true, formatting = true } }
 indent = { tab-width = 4, unit = "    " }
+# Use rufo as formatter
+formatter = { command = "rufo" , args = ["--simple-exit"]}
+auto-format = true
