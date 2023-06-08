@@ -1,4 +1,4 @@
-export EDITOR=vim
+export EDITOR=hx
 
 # My personal scripts
 PATH="/Users/brendantang/scripts:$PATH" 
@@ -59,3 +59,7 @@ export NIX_REMOTE=daemon
 
 # Deno
 export PATH="$HOME/.deno/bin:$PATH"
+
+
+# environment variables I want available globally
+source ~/.env
