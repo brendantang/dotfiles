@@ -13,3 +13,4 @@ node_modules
 .my-notes*
 
 .envrc
+.env
