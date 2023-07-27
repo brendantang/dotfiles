@@ -40,8 +40,22 @@ language-server = { command = "elm-language-server" , args = ["--stdio"]}
 name = "ruby"
 # Solargraph needs these config options, but formatting still doesn't work. 
 # See https://github.com/helix-editor/helix/issues/2623
-config = { solargraph = { diagnostics = true, formatting = true } }
+# config = { solargraph = { diagnostics = true, formatting = true } }
 indent = { tab-width = 4, unit = "    " }
+language-server = { command = "ruby-lsp" }
 # Use rufo as formatter
 formatter = { command = "rufo" , args = ["--simple-exit"]}
 auto-format = true
+
+[[language]]
+ name = "purescript"
+ scope = "source.purescript"
+ injection-regex = "purescript"
+ file-types = ["purs"]
+ roots = ["spago.dhall", "bower.json"]
+ comment-token = "--"
+ language-server = { command = "purescript-language-server", args = ["--stdio"] }
+ indent = { tab-width = 2, unit = "  " }
+ auto-format = true
+ formatter = { command = "purs-tidy", args = ["format"] }
+ grammar = "haskell"
