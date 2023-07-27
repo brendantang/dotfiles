@@ -60,6 +60,9 @@ export NIX_REMOTE=daemon
 # Deno
 export PATH="$HOME/.deno/bin:$PATH"
 
+# tailscale
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale" 
 
 # environment variables I want available globally
 source ~/.env
+
