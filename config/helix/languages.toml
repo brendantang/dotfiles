@@ -1,37 +1,45 @@
 # I use Deno, not node
+[language-server.deno-lsp]
+command = "deno"
+args = ["lsp"]
+
 [[language]]
 name = "javascript"
 roots = ["deno.json", "deno.jsonc"]
-language-server = { command = "deno", args = ["lsp"], language-id = "javascript" }
+language-servers = ["deno-lsp"]
+# language-server = { command = "deno", args = ["lsp"], language-id = "javascript" }
 auto-format = true
-config = { deno.enable = true, deno.lint = true, deno.unstable = true } 
+#config = { deno.enable = true, deno.lint = true, deno.unstable = true } 
 
 [[language]]
 name = "jsx"
 roots = ["deno.json", "deno.jsonc"]
-language-server = { command = "deno", args = ["lsp"], language-id = "javascriptreact" }
+language-servers = ["deno-lsp"]
+#language-server = { command = "deno", args = ["lsp"], language-id = "javascriptreact" }
 auto-format = true
-config = { deno.enable = true, deno.lint = true, deno.unstable = true } 
+#config = { deno.enable = true, deno.lint = true, deno.unstable = true } 
 
 [[language]]
 name = "typescript"
 roots = ["deno.json", "deno.jsonc"]
-language-server = { command = "deno", args = ["lsp"], language-id = "typescript"}
+language-servers = ["deno-lsp"]
+#language-server = { command = "deno", args = ["lsp"], language-id = "typescript"}
 auto-format = true
-config = { deno.enable = true, deno.lint = true, deno.unstable = true } 
+#config = { deno.enable = true, deno.lint = true, deno.unstable = true } 
 
 [[language]]
 name = "tsx"
 roots = ["deno.json", "deno.jsonc"]
-language-server = { command = "deno", args = ["lsp"], language-id = "typescriptreact" }
+language-servers = ["deno-lsp"]
+# language-server = { command = "deno", args = ["lsp"], language-id = "typescriptreact" }
 auto-format = true
-config = { deno.enable = true, deno.lint = true, deno.unstable = true } 
+#config = { deno.enable = true, deno.lint = true, deno.unstable = true } 
 
 
 [[language]]
 name = "elm"
 # The default languages.toml file omits the necessary --stdio argument
-language-server = { command = "elm-language-server" , args = ["--stdio"]}
+# language-server = { command = "elm-language-server" , args = ["--stdio"]}
 # Note that elm language server doesn't work with some versions of node.
 # I am running 16.1.0.
 # See https://github.com/elm-tooling/elm-language-server/issues/692
@@ -42,20 +50,21 @@ name = "ruby"
 # See https://github.com/helix-editor/helix/issues/2623
 # config = { solargraph = { diagnostics = true, formatting = true } }
 indent = { tab-width = 4, unit = "    " }
-language-server = { command = "ruby-lsp" }
+# language-server = { command = "ruby-lsp" }
 # Use rufo as formatter
 formatter = { command = "rufo" , args = ["--simple-exit"]}
 auto-format = true
 
 [[language]]
- name = "purescript"
- scope = "source.purescript"
- injection-regex = "purescript"
- file-types = ["purs"]
- roots = ["spago.dhall", "bower.json"]
- comment-token = "--"
- language-server = { command = "purescript-language-server", args = ["--stdio"] }
- indent = { tab-width = 2, unit = "  " }
- auto-format = true
- formatter = { command = "purs-tidy", args = ["format"] }
- grammar = "haskell"
+name = "purescript"
+scope = "source.purescript"
+injection-regex = "purescript"
+file-types = ["purs"]
+roots = ["spago.dhall", "bower.json"]
+comment-token = "--"
+# language-server = { command = "purescript-language-server", args = ["--stdio"] }
+indent = { tab-width = 2, unit = "  " }
+auto-format = true
+formatter = { command = "purs-tidy", args = ["format"] }
+grammar = "haskell"
+
