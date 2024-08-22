@@ -1,40 +1,21 @@
 # I use Deno, not node
+[[language]]
+name = "typescript"
+language-id = "typescript"
+scope = "source.ts"
+injection-regex = "^(ts|typescript)$"
+file-types = ["ts"]
+shebangs = ["deno"]
+roots = ["deno.json", "deno.jsonc", "package.json"]
+auto-format = true
+language-servers = ["deno-lsp"]
+
 [language-server.deno-lsp]
 command = "deno"
 args = ["lsp"]
 
-[[language]]
-name = "javascript"
-roots = ["deno.json", "deno.jsonc"]
-language-servers = ["deno-lsp"]
-# language-server = { command = "deno", args = ["lsp"], language-id = "javascript" }
-auto-format = true
-#config = { deno.enable = true, deno.lint = true, deno.unstable = true } 
-
-[[language]]
-name = "jsx"
-roots = ["deno.json", "deno.jsonc"]
-language-servers = ["deno-lsp"]
-#language-server = { command = "deno", args = ["lsp"], language-id = "javascriptreact" }
-auto-format = true
-#config = { deno.enable = true, deno.lint = true, deno.unstable = true } 
-
-[[language]]
-name = "typescript"
-roots = ["deno.json", "deno.jsonc"]
-language-servers = ["deno-lsp"]
-#language-server = { command = "deno", args = ["lsp"], language-id = "typescript"}
-auto-format = true
-#config = { deno.enable = true, deno.lint = true, deno.unstable = true } 
-
-[[language]]
-name = "tsx"
-roots = ["deno.json", "deno.jsonc"]
-language-servers = ["deno-lsp"]
-# language-server = { command = "deno", args = ["lsp"], language-id = "typescriptreact" }
-auto-format = true
-#config = { deno.enable = true, deno.lint = true, deno.unstable = true } 
-
+[language-server.deno-lsp.config.deno]
+enable = true
 
 [[language]]
 name = "elm"
@@ -67,4 +48,3 @@ indent = { tab-width = 2, unit = "  " }
 auto-format = true
 formatter = { command = "purs-tidy", args = ["format"] }
 grammar = "haskell"
-
