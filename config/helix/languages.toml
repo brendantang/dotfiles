@@ -19,11 +19,11 @@ enable = true
 
 [[language]]
 name = "elm"
-# The default languages.toml file omits the necessary --stdio argument
-# language-server = { command = "elm-language-server" , args = ["--stdio"]}
-# Note that elm language server doesn't work with some versions of node.
-# I am running 16.1.0.
-# See https://github.com/elm-tooling/elm-language-server/issues/692
+language-servers = ["elm-language-server"]
+
+[language-server.elm-language-server]
+command = "elm-language-server"
+#args = ["--stdio"]
 
 [[language]]
 name = "ruby"
